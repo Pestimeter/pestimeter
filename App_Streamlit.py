@@ -70,7 +70,7 @@ def main():
                 import pandas
                 from sklearn import linear_model
                 data1 = pandas.read_csv("pesticide.csv")
-		df=data1.sample(frac=1)
+                df=data1.sample(frac=1)
                 X = df[['PH', 'TVOC']]
                 y = df['Residue']
                 regr = linear_model.LinearRegression()
